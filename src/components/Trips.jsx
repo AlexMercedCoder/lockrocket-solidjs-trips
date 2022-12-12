@@ -10,7 +10,7 @@ export default function Trips() {
   // Define an RPC call of what we want to run on the server
   const makeTrip = server$(async (trip) => createTrip(trip))
 
-  // define a form for creating a todo using solid-states action system
+  // define a form for creating a trip using solid-states action system
   const [_, { Form }] = createRouteAction(async (formData) => {
     // create the new trip object
     const trip = {
